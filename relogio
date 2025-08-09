@@ -1,0 +1,10 @@
+import time
+import sys
+
+while True:
+    hora_atual = time.strftime("%H:%M:%S")
+    # Códigos ANSI para cor verde
+    # Simples e rápido, não trava.
+    sys.stdout.write("\rHora atual: \033[32m" + hora_atual + "\033[0m")
+    sys.stdout.flush()
+    time.sleep(1)
